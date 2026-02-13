@@ -82,7 +82,7 @@ class LiteLLMAgentComponent(ToolCallingAgentComponent):
             display_name="Current Date",
             advanced=True,
             info="If true, will add a tool to the agent that returns the current date.",
-            value=True,
+            value=False,
         ),
         StrInput(
             name="extract_top_level_properties",
