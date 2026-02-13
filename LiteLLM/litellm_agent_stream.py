@@ -27,7 +27,7 @@ class LiteLLMAgentStreamComponent(ToolCallingAgentComponent):
     display_name: str = "LiteLLM Agent (Stream)"
     description: str = "LiteLLM agent component using streaming HTTP calls for real-time responses."
     documentation: str = "https://docs.litellm.ai/docs/langchain/"
-    icon: str = "LiteLLM"
+    icon: str = "🚅"
     priority: int = 100
     name: str = "litellm_agent_stream"
 
