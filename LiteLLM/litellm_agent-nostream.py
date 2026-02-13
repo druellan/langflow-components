@@ -49,7 +49,14 @@ def convert_tool_to_openai_format(tool: StructuredTool) -> dict:
 
 
 class LiteLLMChatNonStreaming(ChatOpenAI):
-    """ChatOpenAI override using non-streaming HTTP calls to preserve API response metadata."""
+    """LiteLLM Agent Component (Non-Streaming)."""
+
+    display_name: str = "LiteLLM Agent (Non-Streaming)"
+    description: str = "Enhanced agent component using non-streaming HTTP calls to preserve provider metadata."
+    documentation: str = "https://docs.litellm.ai/docs/langchain/"
+    icon: str = "LiteLLM"
+    priority: int = 100
+    name: str = "litellm_agent_non_streaming"
     
     top_level_properties: list[str] = Field(default_factory=list)
     tools: list[StructuredTool] = Field(default_factory=list)
