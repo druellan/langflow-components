@@ -5,7 +5,7 @@ This is an AI assisted rewrite from the original Agent component to better lever
 
 ## Component Variants
 
-### 1. `litellm_agent.py` - Basic Agent
+### 1. LiteLLM/litellm_agent_stream.py - Basic Agent
 
 Simple, standard agent implementation using LangChain's ChatOpenAI with streaming mode.
 
@@ -20,7 +20,7 @@ Simple, standard agent implementation using LangChain's ChatOpenAI with streamin
 - Streaming responses are acceptable
 - You don't require response metadata
 
-### 2. `litellm_agent-nostream.py` - Enhanced Agent with Metadata Extraction
+### 2. LiteLLM/litellm_agent.py - Enhanced Agent with Metadata Extraction
 
 Advanced agent implementation with non-streaming mode to preserve provider metadata (citations, search results, usage info, etc.).
 
