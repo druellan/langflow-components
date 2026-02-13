@@ -22,18 +22,14 @@ from lfx.schema.message import Message
 
 
 class LiteLLMAgentComponent(ToolCallingAgentComponent):
-    """Agent component that uses LiteLLM proxy for language model capabilities.
+    """LiteLLM Agent Component (Streaming)."""
 
-    This component allows you to connect to a LiteLLM proxy server and use any model
-    supported by LiteLLM, including OpenAI, Anthropic, Google, and many others.
-    """
-
-    display_name: str = "LiteLLM Agent"
-    description: str = "Agent that uses LiteLLM for language model capabilities."
+    display_name: str = "LiteLLM Agent (Streaming)"
+    description: str = "Enhanced agent component using streaming HTTP calls for real-time responses."
     documentation: str = "https://docs.litellm.ai/docs/langchain/"
-    icon = "LiteLLM"
-    beta = False
-    name = "LiteLLMAgent"
+    icon: str = "LiteLLM"
+    priority: int = 100
+    name: str = "litellm_agent_streaming"
 
     inputs = [
         StrInput(
