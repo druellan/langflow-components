@@ -1,5 +1,8 @@
 # LiteLLM Agent Components
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Langflow](https://img.shields.io/badge/Langflow-Compatible-green.svg)](https://langflow.org/)
+
 LangFlow agent components that connect to a LiteLLM proxy server for multi-provider LLM support. Two implementations are available with different capabilities.
 This is an AI assisted rewrite from the original Agent component to better leverage the unique features of the LiteLLM API, including provider-specific metadata extraction and enhanced response handling.
 
