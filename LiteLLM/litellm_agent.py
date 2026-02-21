@@ -39,8 +39,9 @@ class LiteLLMAgentComponent(ToolCallingAgentComponent):
     description: str = "LiteLLM agent using non-streaming HTTP calls to preserve provider metadata."
     documentation: str = "https://docs.litellm.ai/docs/langchain/"
     icon = "🚅"
-    beta = False
+    beta = True
     name = "litellm_agent"
+    version = "1.0.0"
 
     inputs = [
         StrInput(

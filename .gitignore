@@ -33,6 +33,9 @@ ENV/
 *.swo
 *~
 .github
+.roo
+.cursor
+.agents
 
 # OS
 .DS_Store

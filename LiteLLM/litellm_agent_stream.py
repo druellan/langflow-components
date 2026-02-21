@@ -30,6 +30,8 @@ class LiteLLMAgentStreamComponent(ToolCallingAgentComponent):
     icon: str = "🚅"
     priority: int = 100
     name: str = "litellm_agent_stream"
+    beta = True
+    version = "1.0.0"
 
     inputs = [
         StrInput(
